@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5               &tog 1                                                                     &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T                &none                                                                     &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G                &none      &kp LCTRL  &kp LALT                   &kp LGUI    &kp ESC      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                      &kp HOME                  &kp PG_UP                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp SPACE  &kp BACKSPACE  &kp LGUI                   &kp RALT  &lt 4 TAB  &kp ENTER          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5               &tog 1                                                                     &mo 3  &kp N6  &kp N7     &kp N8    &kp N9           &kp N0  &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T                &none                                                                     &none   &kp Y   &kp U      &kp I     &kp O            &kp P   &kp BSLH
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G                &none      &kp LCTRL  &kp LALT                   &kp LGUI    &kp ESC      &none   &kp H   &kp J      &kp K     &kp L  &lt 5 SEMICOLON    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                      &kp HOME                  &kp PG_UP                         &kp N   &kp M  &kp COMMA   &kp DOT         &kp FSLH  &kp RSHFT
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp SPACE  &kp BACKSPACE  &kp LGUI                   &kp RALT  &lt 4 TAB  &kp ENTER          &kp UP   &kp DOWN  &kp LBKT         &kp RBKT      &mo 2
             >;
         };
 
@@ -85,6 +85,16 @@
  &trans         &kp HASH  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &trans            &trans  &trans  &trans                  &trans  &trans  &trans       &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT      &kp PLUS  &trans
  &trans      &kp PERCENT  &trans              &kp LBKT      &kp RIGHT_BRACKET  &kp TILDE                            &trans                  &trans                  &kp AMPERSAND    &trans   &trans         &trans     &kp MINUS  &trans
  &trans           &trans  &trans                &trans                 &trans                       &trans  &trans  &trans                  &trans  &trans  &trans                   &trans   &trans         &trans        &trans  &trans
+            >;
+        };
+
+        layer_Media {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans             &trans             &trans      &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &macro_prev_space  &macro_next_space      &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans         &kp C_PREV           &kp C_PP  &kp C_NEXT  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans             &trans             &trans      &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                     &trans             &trans      &trans  &trans  &trans
             >;
         };
 
